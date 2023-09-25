@@ -15,5 +15,5 @@ Repository created for SQL development. The databases will be in their respectiv
 
 Repositório criado para desenvolvimento SQL. Os bancos de dados estarão em suas respectivas versões mais atualizadas: Oracle, SQL Server, MySQL, PostgreSQL, IBM DB2, SQLite, MariaDB. Os scripts: DDL (Data Definition Language); DML (Linguagem de Manipulação de Dados); DQL (Data Query Language); DCL (Linguagem de Controle de Dados) e TCL (Linguagem de Controle de Transação). Ele também terá exibições, índices, procedimentos armazenados, funções e gatilho
 
-![235362472-a8290262-ed58-41bd-b69c-f71ac44faacf](https://user-images.githubusercontent.com/87618859/270218357-fe745bbf-5a35-42e2-a73e-48dc9be47001.jpg)
+![235362472-a8290262-ed58-41bd-b69c-f71ac44faacf](https://github.com/ClaudioOliveira89/ClaudioOliveira89/assets/87618859/dda09ff9-dbc1-48b9-b8ec-155273d245c4)
 
