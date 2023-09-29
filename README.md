@@ -19,8 +19,7 @@
 - **DQL (Data Query Language).**
 - **DCL (Linguagem de Controle de Dados).**
 - **TCL (Linguagem de Controle de Transação).**
-- **Ele também terá exibições, índices, procedimentos armazenados, funções, gatilhos.**
+- **Exibições de índices, procedimentos armazenados, funções, gatilhos.**
 - **Recuperação, extração e importação de dados, assim como tranformação de cargas com Datapump, RCA, RMAN e GRID.**
 
-![235362472-a8290262-ed58-41bd-b69c-f71ac44faacf](https://github.com/ClaudioOliveira89/ClaudioOliveira89/assets/87618859/dda09ff9-dbc1-48b9-b8ec-155273d245c4)
-
+![(https://github.com/ClaudioOliveira89/ClaudioOliveira89/assets/87618859/dda09ff9-dbc1-48b9-b8ec-155273d245c4)](https://user-images.githubusercontent.com/87618859/271693257-e31fbab7-4b4f-444d-b51c-1cf0de4f6fed.jpg)
