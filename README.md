@@ -7,8 +7,9 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-fa5711?style=for-the-badge&logo=mariadb&logoColor=white)
 
-
+SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar bancos de dados relacionais. Ela permite a criação, recuperação, atualização e exclusão de dados em bancos de dados, bem como a definição de estruturas de tabelas. SQL é amplamente usado em sistemas de gerenciamento de bancos de dados, como MySQL, PostgreSQL, SQL Server e Oracle, para armazenar e manipular informações em aplicações de negócios, websites e muito mais.
 Os bancos de dados estarão em suas respectivas versões mais atualizadas: 
+
 - **Oracle, SQL Server, MySQL, PostgreSQL, IBM DB2, SQLite, MariaDB.**
 
 Os scripts base do SQL:
@@ -20,4 +21,3 @@ Os scripts base do SQL:
 - **Exibições de índices, procedimentos armazenados, funções, gatilhos.**
 
 
-![(https://github.com/ClaudioOliveira89/ClaudioOliveira89/assets/87618859/dda09ff9-dbc1-48b9-b8ec-155273d245c4)](https://user-images.githubusercontent.com/87618859/271693257-e31fbab7-4b4f-444d-b51c-1cf0de4f6fed.jpg)
