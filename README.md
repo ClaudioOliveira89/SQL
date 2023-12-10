@@ -7,17 +7,25 @@
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/MariaDB-fa5711?style=for-the-badge&logo=mariadb&logoColor=white)
 
-SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar bancos de dados relacionais. Ela permite a criação, recuperação, atualização e exclusão de dados em bancos de dados, bem como a definição de estruturas de tabelas. SQL é amplamente usado em sistemas de gerenciamento de bancos de dados, como MySQL, PostgreSQL, SQL Server e Oracle, para armazenar e manipular informações em aplicações de negócios, websites e muito mais.
-Os bancos de dados estarão em suas respectivas versões mais atualizadas: 
+SQL (Structured Query Language) is a programming language used to manage relational databases. 
+It allows the creation, retrieval, updating, and deletion of data in databases, as well as the definition of table structures.
+SQL is widely used in database management systems such as MySQL, PostgreSQL, SQL Server, and Oracle to store and manipulate information in business applications, websites, among others.
+This repository is one of my favorites where I enhance my skills in SQL. Here, I develop fundamental concepts up to advanced queries, manipulation, optimization, and data modeling in various database management systems (DBMSs). The goal is to learn to efficiently and systematically extract valuable information from large datasets.
 
-- **Oracle, SQL Server, MySQL, PostgreSQL, IBM DB2, SQLite, MariaDB.**
+The foundational scripts of SQL include:
 
-Os scripts base do SQL:
 - **DDL (Data Definition Language).**
-- **DML (Linguagem de Manipulação de Dados).**
+- **DML (Data Manipulation Language).**
 - **DQL (Data Query Language).**
-- **DCL (Linguagem de Controle de Dados).**
-- **TCL (Linguagem de Controle de Transação).**
-- **Exibições de índices, procedimentos armazenados, funções, gatilhos.**
+- **DCL (Data Control Language).**
+- **TCL (Transaction Control Language).**
+- **Views, stored procedures, functions, triggers.**
+
+SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar bancos de dados relacionais. 
+Ela permite a criação, recuperação, atualização e exclusão de dados em bancos de dados, bem como a definição de estruturas de tabelas. 
+SQL é amplamente usado em sistemas de gerenciamento de bancos de dados, como MySQL, PostgreSQL, SQL Server e Oracle, para armazenar e manipular informações em aplicações de negócios, websites entre outros.
+Este repositório é um dos meus favorito onde aprimoro minhas habilidades em SQL, aqui desenvolvo conceitos fundamentais até consultas avançadas, manipulação, otimização e modelagem de dados em diversos sistemas de gerenciamento de bancos de dados (SGBDs). 
+O objetivo é aprender a extrair informações valiosas de grandes conjuntos de dados de maneira eficiente e organizada.
+
 
 
