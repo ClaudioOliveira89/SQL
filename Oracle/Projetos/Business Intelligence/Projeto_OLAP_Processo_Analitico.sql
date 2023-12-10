@@ -1,10 +1,8 @@
---Iniciei o SELECT para verificar os dados da tabela employees e departments.
 SELECT * FROM employees;
-
 SELECT * FROM departments;
+--Iniciei o SELECT para verificar os dados da tabela employees e departments--
 
---Criei a primeira view para a staging area do ETL.
-
+--Criei a primeira view para a staging area do ETL--
 CREATE OR REPLACE VIEW staging_area AS
 SELECT E.employee_id, E.last_name, E.salary, E.hire_date, 
 D.department_id AS nro_setor, D.department_name AS nome_stor
@@ -16,7 +14,7 @@ JOIN departments D ON (E.department_id = D.department_id);
 UPDATE employees 
 SET hire_date = TO_CHAR(hire_date, 'DD/MM/YYYY');
 
---Criei a primeira tabela para receber os dados.
+--Criei a primeira tabela para receber os dados--
 CREATE TABLE carga_online_func_setor(
     nro_func number,
     ultnome varchar2(150),
@@ -30,29 +28,29 @@ INSERT INTO carga_online_func_setor (nro_func, ultnome, salario_mensal, data_adm
 SELECT employee_id, last_name, salary, TO_DATE(hire_date, 'DD/MM/YYYY'), nro_setor, nome_stor
 FROM staging_area;
 
---Depois criei outra tabela e selecionei a anterior para obter os dados dela.
+--Depois criei outra tabela e selecionei a anterior para obter os dados dela--
 CREATE TABLE olap_online_func_setor AS
 SELECT * FROM carga_online_func_setor;
 
---Criei a sequência para substituir os id em modo de autoincrmento.
+--Criei a sequência para substituir os id em modo de autoincrmento--
 CREATE SEQUENCE olap_codigo_sk;
 
---Alterei a tabela para adicionar o código da sequência.
+--Alterei a tabela para adicionar o código da sequência--
 ALTER TABLE olap_online_func_setor
 ADD codigo_sk NUMBER;
 
---Fiz um update para declara a coluna e usando o NEXTVAL para obter a próxima sequência.
+--Fiz um update para declara a coluna e usando o NEXTVAL para obter a próxima sequência--
 UPDATE olap_online_func_setor
 SET codigo_sk = olap_codigo_sk.NEXTVAL;
 
---Altereiu a tabela e adicionei restrições a chave primária.
+--Altereiu a tabela e adicionei restrições a chave primária--
 ALTER TABLE olap_online_func_setor
 ADD CONSTRAINT sk_pk PRIMARY KEY (codigo_sk);
 
 
 SELECT * FROM olap_online_func_setor;
 
---Select com operadores e agrupamento e ordenamento do valores mensal e número e quantidade de funcionários. 
+--Select com operadores e agrupamento e ordenamento do valores mensal e número e quantidade de funcionários-- 
 SELECT nro_setor, SUM(salario_mensal)
 soma_salarial,
 COUNT(nro_func) qtde_funcionários
@@ -86,21 +84,21 @@ BEGIN
 END relatorio_subtotal;
 
 
---Três formas de acionar a procedure EXECUTE ou EXRC abreviado em minha opinião a mais simples.
+--Três formas de acionar a procedure EXECUTE ou EXRC abreviado em minha opinião a mais simples--
 EXECUTE relatorio_subtotal;    
 
---CALL caso esteja para executar em uma variável BIND OBS: Não esquecer de acionar o SET SERVEROUTPUT ON para ativar o dbms.
+--CALL caso esteja para executar em uma variável BIND OBS: Não esquecer de acionar o SET SERVEROUTPUT ON para ativar o dbms--
 CALL relatorio_subtotal;
 
 SET SERVEROUTPUT ON; 
---BEGIN e END para chamar a procedure metodo mais tradicional.  
+--BEGIN e END para chamar a procedure metodo mais tradicional--  
 BEGIN
     relatorio_subtotal;
 END;
 
---GRANT para conceder privilégios ao úsuário caso fosse necessário. 
+--GRANT para conceder privilégios ao úsuário caso fosse necessário-- 
 GRANT CREATE TABLE TO hr;
---DROP para excluir caso de erro no projeto ou nas tabelas, views e procedures.
+--DROP para excluir caso de erro no projeto ou nas tabelas, views e procedures--
 DROP VIEW staging_area;
 DROP TABLE carga_online_func_setor;
 DROP TABLE olap_online_func_setor;
